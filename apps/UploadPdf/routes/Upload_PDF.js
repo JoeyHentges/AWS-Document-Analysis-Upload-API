@@ -10,10 +10,11 @@ const router = express.Router();
 let uploadPdf;
 
 router.post('/', checkKey,
-    uploadPdfFile.single('PDF'),
-    async (req, res) => uploadPdf(req, res));
+  // uploadPdfFile.single('PDF'),
+  async (req, res) => uploadPdf(req, res));
 
 uploadPdf = async (req, res) => {
+  console.log('hi');
   res.send('HI');
 };
 

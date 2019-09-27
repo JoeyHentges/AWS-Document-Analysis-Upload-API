@@ -8,6 +8,7 @@ const { typedefs } = require('../controllers/typeDefs/typeDefs');
 const router = express.Router();
 
 const Upload_PDF = require('./Upload_PDF');
+
 router.use('/', Upload_PDF.routes);
 
 let getCats;
@@ -22,7 +23,7 @@ getCats = async (req, res) => {
   const result = await graphql(typedefs, '{ cats {id name} }', resolvers.Query).then(response => response);
   console.log(result.data);
   res.render(
-    'Upload_PDF/views/index',
+    'UploadPdf/views/index',
     {
       title: 'hello',
       cats: result.data
@@ -42,7 +43,7 @@ createCat = async (req, res) => {
   const schema = `mutation{ createCat(
     name: "bob"
   ) {id name}}`;
-  const result = await graphql(typedefs, schema, resolvers.Mutation).then(response => response);  
+  const result = await graphql(typedefs, schema, resolvers.Mutation).then(response => response);
   console.log(result);
   res.send('created a cat');
 };

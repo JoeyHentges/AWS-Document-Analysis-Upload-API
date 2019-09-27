@@ -1,5 +1,5 @@
-const Upload_PDF = require('../Upload_PDF/app_main');
+const UploadPdf = require('../UploadPdf/app_main');
 
 module.exports.apps = [
-  Upload_PDF
+  UploadPdf
 ];
