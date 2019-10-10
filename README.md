@@ -1,13 +1,11 @@
-# Node.js-From-Scratch-Starter
-A from scratch starter template with many useful packages ready to be installed.
+# AWS-Document-Analysis-Upload-API
+An API to assist in document uploading to AWS S3.
 
 ## Features
 
 **Server-side**
 * [x] **[Node.JS](https://nodejs.org)** v10.x.x
 * [x] **[Express](https://github.com/expressjs/express)**
-* [x] [MongoDB](https://www.mongodb.com/) with [Mongoose](https://github.com/Automattic/mongoose)
-* [x] **[GraphQL](http://graphql.org/)**
 * [x] [Cluster](https://nodejs.org/api/cluster.html)
 
 **Client-side**
@@ -53,23 +51,6 @@ $ npm run cluster
 |   +---db
 |       +---db_config.js
 |       +---db_connection.js
-|
-+---controllers
-|   +---resolvers
-|   +---typeDefs
-|
-+---models
-|
-+---public
-|   +---css
-|   +---img
-|   +---js
-|
-+---src
-|   +---routes
-|   |   +---user
-|   |   +---routes.js
-|   +---views
 |
 +---.eslint.js
 +---.gitignore
