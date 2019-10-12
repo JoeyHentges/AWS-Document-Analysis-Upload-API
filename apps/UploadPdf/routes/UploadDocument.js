@@ -12,6 +12,7 @@ router.post('/', checkKey,
   async (req, res) => uploadPdf(req, res));
 
 uploadPdf = async (req, res) => {
+  console.log(req.file);
   res.send({
     status: 'successfully upload document'
   });
